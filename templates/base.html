@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artlly</title>
+  <!-- main stylesheet import -->
+  <link rel="stylesheet" href="../static/css/main.css">
+  <!-- Cairo font set import from google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- fontawesome icont library import -->
+  <link rel="stylesheet" href="../static/css/all.min.css">
+  <!-- Normalize stylesheet import -->
+  <link rel="Normalize" href="../static/css/normalize.css">
+  <!-- Addition of custom css file if found -->
+  <!-- {% if custom_css %}
+  <link rel="stylesheet" href="{{ url_for('static', filename= '/css/' + custom_css+'.css')}}">
+  {% endif %} -->
+</head>
+<body>
+  
+  <div class="header" id="header">
+    <div class="container">
+      <div class="navigation">
+        <div class="logo">
+          <a href="">Artlly</a> 
+        </div>
+        <div class="nav_opts">
+          <ul>
+            <li><a href="#landing" class="nav_opt">Home</a></li>
+            <li><a href="#gallary" class="nav_opt">Gallary</a></li>
+            <li><a href="#artists" class="nav_opt">Artists</a></li>
+            <li><a href="#reviews" class="nav_opt reviews">Reviews</a></li>
+            <li><a href="#stats" class="nav_opt stats">Stats</a></li>
+            <li><a href="#sub" class="nav_opt">Subscriptions</a></li>
+            <li><a href="#contact" class = "contact nav_opt">Contact</a></li>
+            <li><a href="loginpage" class="login"> log in</a></li>
+            <li><a href="#joinpage" class="join">Join </a></li>
+            <li class="darkBright dark" onclick="goBright()"> <i class="fa-solid fa-sun"></i></li>
+            <li class="darkBright bright" onclick="goDark()"> <i class="fa-regular fa-moon"></i></li>
+          </ul>
+        </div>
+        <div class="nav_opts_mobile">
+          <i class="fa-solid fa-bars bars">
+          </i>
+          <ul>
+            <li><a href="#landing" class="nav_opt">Home</a></li>
+            <li><a href="#gallary" class="nav_opt">Gallary</a></li>
+            <li><a href="#artists" class="nav_opt">Artists</a></li>
+            <li><a href="#reviews" class="nav_opt reviews">Reviews</a></li>
+            <li><a href="#stats" class="nav_opt stats">Stats</a></li>
+            <li><a href="#sub" class="nav_opt">Supscriptions</a></li>
+            <li><a href="#contact" class = "contact nav_opt">Contact us</a></li>
+            <li class="darkBright dark" onclick="goBright()"> <i class="fa-solid fa-sun"></i></li>
+            <li class="darkBright bright" onclick="goDark()"> <i class="fa-regular fa-moon"></i></li>
+            <li><a href="#" class="login"> log In</a></li>
+            <li><a href="#" class="join">Join </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="landing" id="landing">
+    <h1>All you need and more with <span>Artlly!</span></h1>
+    <div class="searchContainer">
+      <form action="search">
+        <input type="text" placeholder="Search Artlly">
+        <button class="searchBtn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span> Search</span>
+        </button>
+      </form>
+    </div>
+    <div class="categories">
+      <a href="#gallery"><div class="category"> <i class="fa-solid fa-tv"></i> Monitors </div></a>
+      <a href="#gallery"><div class="category"> <i class="fa-solid fa-display"></i> Desktop </div></a>
+      <a href="#gallery"><div class="category"> <i class="fa-solid fa-tablet-screen-button"></i> Tablets </div></a>
+      <a href="#gallery"><div class="category"> <i class="fa-solid fa-mobile-screen-button"></i> Phones </div></a>
+    </div>
+  </div>
+  <div class="gallary" id="gallery">
+    <h2 class="sectionTitle">Gallary</h2>
+    <div class="Gallarycontainer">
+      <p class="sizep">Size: </p>
+      <div class="sizeSelection">
+        <div class="sizetype active" filter="all"><p>All</p></div>
+      </div>
+      <p class="themep">Themes: </p>
+      <div class="ThemeSelection">
+      </div>
+      <ul class="gallaryScobe"  >
+      </ul>
+    </div>
+  </div>
+  <div class="spikesGroup">
+    <div class="spikes1"></div>
+    <div class="spikes2"></div>
+  </div>
+  <div class="team" id="artists">
+    <div class="dotsup"></div>
+    <div class="dotsdown"></div>
+    <h2 class="sectionTitle"> Artists</h2>
+    <div class="teamcontainer">
+      <!-- <div class="box">
+        <div class="data">
+          <div class="image"><img src="../static/images/avatars/sasuky.jpeg" alt="img"></div>
+          <div class="social">
+            <a href="https://linkedin.com"target="_blank"><i class="fa-brands fa-linkedin-in linkedin"></i></a>
+            <a href="https://twitter.com"target="_blank"><i class="fa-brands fa-twitter twitter"></i></a>
+            <a href="https://facebook.com"target="_blank"><i class="fa-brands fa-facebook-f facebook"></i></a>
+            <a href="https://youtube.com"target="_blank"><i class="fa-brands fa-youtube youtube"></i></a>
+          </div>
+        </div>
+        <h3>
+          Member Name
+        </h3>
+        <p>Short discription</p>
+      </div> -->
+      
+    </div>
+  </div>
+  <div class="spikesGroup">
+    <div class="spikes1"></div>
+    <div class="spikes2"></div>
+  </div>
+  <div class="reviews" id="reviews">
+    <div class="sectionTitle">Reviews</div>
+    <div class="newcontainer"?>
+    </div>
+  </div>
+  <div class="spikesGroup">
+    <div class="spikes1"></div>
+    <div class="spikes2"></div>
+  </div>
+  <div class="stats" id="stats">
+    <h2 class="sectionTitle"> Statistics</h2>
+    <div class="newcontainer">
+      <div class="customers">
+        <div class="counter"> + 22 K </div>
+        <div class="text"> statisified customers</div>
+      </div>
+      <div class="images">
+        <div class="counter"> + 100 k</div>
+        <div class="text"> Images in our liberaty</div>
+      </div>
+      <div class="artists">
+        <div class="counter"> + 1500 </div>
+        <div class="text"> Artists woking with us</div>
+      </div>
+      <div class="brands">
+        <div class="counter"> 32</div>
+        <div class="text"> Major brands </div>
+      </div>
+    </div>
+  </div>
+  <div class="spikesGroup">
+    <div class="spikes1"></div>
+    <div class="spikes2"></div>
+  </div>
+  <div class="sub" id = "sub">
+    <h2 class="sectionTitle"> Subscribtions </h2>
+    <div class="newcontainer">
+      <div class="box basic">
+        <div class="title">
+          basic
+        </div>
+        <div class="price">
+          $9.99 <span>/month</span>
+        </div>
+        <div class="options">
+          <ul>
+            <li><i class="fa-solid fa-check"></i> unlimited downloads</li>
+            <li><i class="fa-solid fa-check"></i> 4k Downloads</li>
+            <li><i class="fa-solid fa-check"></i> cutom designs requists</li>
+            <li><i class="fa-solid fa-x"></i> 24 hours customers support</li>
+            <li><i class="fa-solid fa-x"></i> 8k downloads</li>
+            <li><i class="fa-solid fa-x"></i> free events tickets</li>
+          </ul>
+        </div>
+        <button class="btn"> Choose Plan</button>
+      </div>
+      <div class="box pro">
+        <div class="title ">
+          pro
+        </div>
+        <div class="price">
+          $19.99 <span>/month</span>
+        </div>
+        <div class="options">
+          <ul>
+            <li><i class="fa-solid fa-check"></i> unlimited downloads</li>
+            <li><i class="fa-solid fa-check"></i> 4k Downloads</li>
+            <li><i class="fa-solid fa-check"></i> cutom designs requists</li>
+            <li><i class="fa-solid fa-check"></i> 24 hours customers support</li>
+            <li><i class="fa-solid fa-x"></i> 8k downloads</li>
+            <li><i class="fa-solid fa-x"></i> free events tickets</li>
+          </ul>
+        </div>
+        <button class="btn"> Choose Plan</button>
+      </div>
+      <div class="box ultimate">
+        <div class="title ">
+          ultimate
+        </div>
+        <div class="price">
+          $29.99 <span>/month</span>
+        </div>
+        <div class="options">
+          <ul>
+            <li><i class="fa-solid fa-check"></i> unlimited downloads</li>
+            <li><i class="fa-solid fa-check"></i> 4k Downloads</li>
+            <li><i class="fa-solid fa-check"></i> cutom designs requists</li>
+            <li><i class="fa-solid fa-check"></i> 24 hours customers support</li>
+            <li><i class="fa-solid fa-check"></i> 8k downloads</li>
+            <li><i class="fa-solid fa-check"></i> free events tickets</li>
+          </ul>
+        </div>
+        <button class="btn"> Choose Plan</button>
+      </div>
+    </div>
+  </div>
+  <div class="spikesGroup">
+    <div class="spikes1"></div>
+    <div class="spikes2"></div>
+  </div>
+  <div class="contact" id="contact">
+    <div class="sectionTitle"> contact us</div>
+    <div class="newcontainer">
+      <div class="icon">
+        <i class="fa-regular fa-envelope"></i>
+        <p> contact@Artlly.com</p>
+      </div>
+      <form action="">
+        <input type="text" placeholder="Your Name" class="name">
+        <input type="email" placeholder="Your Email" class="email">
+        <label for="contactmessege"> Please tell us what you want here:</label>
+        <textarea type="text" value="your messege" class="messege" id ="contactMessege"> </textarea>
+        <button> send</button>
+      </form>
+    </div>
+  </div>
+  <!-- {% block content %}
+  {% endblock %}  -->
+  <div class="footer" id="footer">
+    <div class="newcontainer">
+      <div class="info">
+        <p>artlly</p>
+        <p>contact@artlly.com</p>
+        <div class="instagram"><i class="fa-brands fa-instagram"></i> <a href="https://instagram.com/artlly">instagram.com/artlly</a></div>
+        <div class="linkedin"><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/artlly">linkedin.com/artlly</a></div>
+        <div class="facebook"><i class="fa-brands fa-facebook"></i> <a href="https://facebook.com/artlly">facebook.com/artlly</a></div>
+        <div class="twitter"><i class="fa-brands fa-twitter"></i> <a href="https://twitter.com/artlly">twitter.com/artlly</a></div>
+        <div class="youtube"><i class="fa-brands fa-youtube"></i> <a href="https://youtube.com/artlly">youtube.com/artlly</a></div>
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="#landing" class="">Home</a></li>
+          <li><a href="#gallary" class="">Gallary</a></li>
+          <li><a href="#artists" class="">Artists</a></li>
+          <li><a href="#reviews" class="">Reviews</a></li>
+          <li><a href="#stats" class="">Stats</a></li>
+        </ul>
+        <ul>
+          <li><a href="#sub" class="">Subscriptions</a></li>
+          <li><a href="#contact" class ="">Contact</a></li>
+          <li><a href="" class="login">log in</a></li>
+          <li><a href="" class="join">Join </a></li>
+        </ul>
+      </div>
+      <div class="devby">
+        <p>&copy; 2022</p>
+        <p>This template is fully designed and created by <span> Ahmed Osama</span> </p>
+        <p><a href="https://github.com/ahmedd-osama"> <i class="fa-brands fa-github"></i> Github: ahmedd-osama </p></a>
+        <p>for business inquiries: <a href="ahmed.osaama10@gmail.com">ahmed.osaama10@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="loginpage" id="loginpage">
+    <div class="box">
+      <h2>welcome Back!</h2>
+      <form action="login">
+        <label for="loginemail"> Please enter your email:</label>
+        <input type="email" placeholder="Email" id="loginemail">
+        <label for="loginpassword"> Please enter your password:</label>
+        <input type="password" placeholder="Password" id="loginpassword">
+        <button> Log in </button>
+      </form>
+    </div>
+  </div>
+  <div class="joinpage" id="joinpage">
+    <div class="box">
+      <h2>welcome to our family!</h2>
+      <form action="join">
+        <label for="joinname">Enter your full name:</label>
+        <input type="name" id="joinname" placeholder="Full Name">
+        <label for="joinusername"> Enter your username:</label>
+        <input type="username" placeholder="User Name">
+        <label for="joinusername"> Enter your email:</label>
+        <input type="email" placeholder="Email">
+        <label for="password">Please enter your password. At least 8 charachters long.</label>
+        <input type="password" id="password" placeholder="Password">
+        <label for="passwordagain"> Enter your password again: </label>
+        <input type="password" name="password" id="passwordagain" placeholder="Enter Password">
+        <button> join</button>
+      </form>
+    </div>
+    
+  </div>
+  <script src="../static/scripts/main.js"></script>
+</body>
+</html>
